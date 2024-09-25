@@ -1,11 +1,5 @@
 # Relaci-n1-Algoritmos
 1. Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
-
-Paso 1.-Inicio
-Paso 2.-Leer (Nombre)
-Paso 3.-Mostrar "Hola (nombre)"
-Paso 4.-Fin
-
 2. Calcular el perímetro y área de un rectángulo dada su base y su altura.
 3. Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.
 4. Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.
