@@ -1,0 +1,17 @@
+Algoritmo InvertirNumero
+    Definir numero, cifra1, cifra2, numeroInvertido Como Entero
+	
+    // Solicitar un número de dos cifras al usuario
+    Escribir "Ingrese un número de dos cifras:"
+    Leer numero
+	
+    // Extraer las cifras
+    cifra1 <- numero / 10            // Obtener la primera cifra
+    cifra2 <- numero Mod 10          // Obtener la segunda cifra
+	
+    // Calcular el número invertido
+    numeroInvertido <- (cifra2 * 10) + cifra1
+	
+    // Mostrar el resultado
+    Escribir "El número invertido es: ", numeroInvertido
+FinAlgoritmo
