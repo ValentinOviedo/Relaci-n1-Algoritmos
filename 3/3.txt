@@ -1,0 +1,15 @@
+Algoritmo CalcularHipotenusa
+    Definir cateto1, cateto2, hipotenusa Como Real
+	
+    // Solicitar los catetos al usuario
+    Escribir "Ingrese el valor del primer cateto:"
+    Leer cateto1
+    Escribir "Ingrese el valor del segundo cateto:"
+    Leer cateto2
+	
+    // Calcular la hipotenusa usando el teorema de Pitágoras
+    hipotenusa <- Raiz(cateto1^2 + cateto2^2)
+	
+    // Mostrar el resultado
+    Escribir "La hipotenusa del triángulo rectángulo es: ", hipotenusa
+FinAlgoritmo
