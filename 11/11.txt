@@ -1,0 +1,15 @@
+Algoritmo CalcularDistancia
+    Definir num1, num2, distancia Como Real
+	
+    // Solicitar los dos números al usuario
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+	
+    // Calcular la distancia (valor absoluto de la diferencia)
+    distancia <- abs(num1 - num2)
+	
+    // Mostrar el resultado
+    Escribir "La distancia entre ", num1, " y ", num2, " es: ", distancia
+FinAlgoritmo
