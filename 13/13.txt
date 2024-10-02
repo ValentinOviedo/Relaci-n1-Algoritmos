@@ -1,0 +1,17 @@
+Algoritmo CalcularRaices
+    Definir numero, raizCuadrada, raizCubica Como Real
+	
+    // Solicitar un número al usuario
+    Escribir "Ingrese un número:"
+    Leer numero
+	
+    // Calcular la raíz cuadrada
+    raizCuadrada <- Raiz(numero)
+	
+    // Calcular la raíz cúbica (elevando a la potencia de 1/3)
+    raizCubica <- numero^(1/3)
+	
+    // Mostrar los resultados
+    Escribir "La raíz cuadrada de ", numero, " es: ", raizCuadrada
+    Escribir "La raíz cúbica de ", numero, " es: ", raizCubica
+FinAlgoritmo
