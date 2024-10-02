@@ -1,0 +1,17 @@
+Algoritmo CalcularPrecioConDescuento
+    Definir totalCompra, descuento, totalAPagar Como Real
+	
+    // Solicitar el total de la compra al cliente
+    Escribir "Ingrese el total de su compra:"
+    Leer totalCompra
+	
+    // Calcular el descuento
+    descuento <- totalCompra * 0.15
+	
+    // Calcular el total a pagar después del descuento
+    totalAPagar <- totalCompra - descuento
+	
+    // Mostrar el resultado
+    Escribir "El descuento es: ", descuento
+    Escribir "El total a pagar después del descuento es: ", totalAPagar
+FinAlgoritmo
