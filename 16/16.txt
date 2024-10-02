@@ -1,0 +1,27 @@
+Algoritmo CalcularTiempoAlcance
+    Definir d, v1, v2, tiempo Como Real
+	
+    // Solicitar la distancia entre los dos vehículos
+    Escribir "Ingrese la distancia entre los dos vehículos (en km):"
+    Leer d
+	
+    // Solicitar las velocidades de los dos vehículos
+    Escribir "Ingrese la velocidad del vehículo que está adelante (en km/h):"
+    Leer v1
+    Escribir "Ingrese la velocidad del vehículo que está detrás (en km/h):"
+    Leer v2
+	
+    // Verificar que el vehículo detrás tenga una velocidad mayor
+    Si v2 <= v1 Entonces
+        Escribir "El vehículo detrás debe tener una velocidad mayor que el de adelante."
+    Sino
+        // Calcular el tiempo en horas
+        tiempo <- d / (v2 - v1)
+		
+        // Convertir el tiempo a minutos
+        tiempo <- tiempo * 60
+		
+        // Mostrar el resultado
+        Escribir "El vehículo detrás tardará ", tiempo, " minutos en alcanzar al vehículo adelante."
+    FinSi
+FinAlgoritmo
