@@ -1,0 +1,23 @@
+Algoritmo CalcularSueldoConComisiones
+    Definir sueldoBase, venta1, venta2, venta3, comision, totalComisiones, totalMensual Como Real
+	
+    // Solicitar el sueldo base y las tres ventas al vendedor
+    Escribir "Ingrese el sueldo base del vendedor:"
+    Leer sueldoBase
+    Escribir "Ingrese el monto de la primera venta:"
+    Leer venta1
+    Escribir "Ingrese el monto de la segunda venta:"
+    Leer venta2
+    Escribir "Ingrese el monto de la tercera venta:"
+    Leer venta3
+	
+    // Calcular el total de comisiones (10% de las ventas)
+    totalComisiones <- (venta1 + venta2 + venta3) * 0.10
+	
+    // Calcular el total que recibirá el vendedor en el mes
+    totalMensual <- sueldoBase + totalComisiones
+	
+    // Mostrar los resultados
+    Escribir "El total de comisiones es: ", totalComisiones
+    Escribir "El total que recibirá el vendedor en el mes es: ", totalMensual
+FinAlgoritmo
