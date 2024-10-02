@@ -1,0 +1,32 @@
+Algoritmo CalcularHoraLlegada
+    Definir HH, MM, SS, T, totalSegundos, horaLlegada, minutoLlegada, segundoLlegada Como Entero
+	
+    // Solicitar la hora de salida
+    Escribir "Ingrese la hora de salida (HH):"
+    Leer HH
+    Escribir "Ingrese los minutos de salida (MM):"
+    Leer MM
+    Escribir "Ingrese los segundos de salida (SS):"
+    Leer SS
+	
+    // Solicitar el tiempo de viaje en segundos
+    Escribir "Ingrese el tiempo de viaje en segundos (T):"
+    Leer T
+	
+    // Convertir la hora de salida a segundos totales
+    totalSegundos <- HH * 3600 + MM * 60 + SS
+	
+    // Sumar el tiempo de viaje
+    totalSegundos <- totalSegundos + T
+	
+    // Calcular la hora, minutos y segundos de llegada
+    horaLlegada <- totalSegundos / 3600
+    minutoLlegada <- (totalSegundos Mod 3600) / 60
+    segundoLlegada <- totalSegundos Mod 60
+	
+    // Ajustar la hora si es mayor a 24
+    horaLlegada <- horaLlegada Mod 24
+	
+    // Mostrar el resultado
+    Escribir "La hora de llegada a la ciudad B es: ", horaLlegada, ":", minutoLlegada, ":", segundoLlegada
+FinAlgoritmo
