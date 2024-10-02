@@ -1,0 +1,14 @@
+Algoritmo ConvertirMinutosAHoras
+    Definir minutos, horas, minutosRestantes Como Entero
+	
+    // Solicitar la cantidad de minutos al usuario
+    Escribir "Ingrese la cantidad de minutos:"
+    Leer minutos
+	
+    // Calcular las horas y minutos restantes
+    horas <- minutos / 60
+    minutosRestantes <- minutos Mod 60
+	
+    // Mostrar el resultado
+    Escribir minutos, " minutos son ", horas, " horas y ", minutosRestantes, " minutos."
+FinAlgoritmo
