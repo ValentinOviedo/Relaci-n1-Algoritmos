@@ -1,5 +1,0 @@
-Algoritmo saludar
-	Escribir  "Introduce tu nombre"
-	Leer a;
-	Escribir "Hola", a;
-FinAlgoritmo
