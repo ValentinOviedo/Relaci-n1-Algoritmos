@@ -1,0 +1,27 @@
+Algoritmo CalcularCalificacionFinal
+    Definir calificacion1, calificacion2, calificacion3, examenFinal, trabajoFinal Como Real
+    Definir promedioParciales, calificacionFinal Como Real
+	
+    // Solicitar las tres calificaciones parciales al alumno
+    Escribir "Ingrese la primera calificación parcial:"
+    Leer calificacion1
+    Escribir "Ingrese la segunda calificación parcial:"
+    Leer calificacion2
+    Escribir "Ingrese la tercera calificación parcial:"
+    Leer calificacion3
+	
+    // Solicitar la calificación del examen final y del trabajo final
+    Escribir "Ingrese la calificación del examen final:"
+    Leer examenFinal
+    Escribir "Ingrese la calificación del trabajo final:"
+    Leer trabajoFinal
+	
+    // Calcular el promedio de las calificaciones parciales
+    promedioParciales <- (calificacion1 + calificacion2 + calificacion3) / 3
+	
+    // Calcular la calificación final
+    calificacionFinal <- (promedioParciales * 0.55) + (examenFinal * 0.30) + (trabajoFinal * 0.15)
+	
+    // Mostrar el resultado
+    Escribir "La calificación final del alumno en Algoritmos es: ", calificacionFinal
+FinAlgoritmo
