@@ -1,0 +1,26 @@
+Algoritmo CalcularDineroTotal
+    Definir monedas2, monedas1, monedas50, monedas20, monedas10 Como Entero
+    Definir totalEuros, totalCentimos Como Real
+	
+    // Solicitar la cantidad de monedas
+    Escribir "Ingrese la cantidad de monedas de 2?:"
+    Leer monedas2
+    Escribir "Ingrese la cantidad de monedas de 1?:"
+    Leer monedas1
+    Escribir "Ingrese la cantidad de monedas de 50 céntimos:"
+    Leer monedas50
+    Escribir "Ingrese la cantidad de monedas de 20 céntimos:"
+    Leer monedas20
+    Escribir "Ingrese la cantidad de monedas de 10 céntimos:"
+    Leer monedas10
+	
+    // Calcular el total en céntimos
+    totalCentimos <- (monedas2 * 200) + (monedas1 * 100) + (monedas50 * 50) + (monedas20 * 20) + (monedas10 * 10)
+	
+    // Convertir a euros y céntimos
+    totalEuros <- totalCentimos / 100
+    totalCentimos <- totalCentimos Mod 100
+	
+    // Mostrar el resultado
+    Escribir "El total de dinero es: ", totalEuros, " euros y ", totalCentimos, " céntimos."
+FinAlgoritmo
