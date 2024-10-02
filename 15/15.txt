@@ -1,0 +1,18 @@
+Algoritmo IntercambiarValores
+    Definir A, B, temporal Como Real
+	
+    // Solicitar los valores de A y B al usuario
+    Escribir "Ingrese el valor de A:"
+    Leer A
+    Escribir "Ingrese el valor de B:"
+    Leer B
+	
+    // Intercambiar los valores
+    temporal <- A
+    A <- B
+    B <- temporal
+	
+    // Mostrar los resultados
+    Escribir "El nuevo valor de A es: ", A
+    Escribir "El nuevo valor de B es: ", B
+FinAlgoritmo
