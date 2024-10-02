@@ -1,0 +1,21 @@
+Algoritmo CalcularNotaFinal
+    Definir correctas, incorrectas, enBlanco, nota Como Entero
+	
+    // Solicitar la cantidad de respuestas correctas
+    Escribir "Ingrese la cantidad de respuestas correctas:"
+    Leer correctas
+	
+    // Solicitar la cantidad de respuestas incorrectas
+    Escribir "Ingrese la cantidad de respuestas incorrectas:"
+    Leer incorrectas
+	
+    // Solicitar la cantidad de respuestas en blanco
+    Escribir "Ingrese la cantidad de respuestas en blanco:"
+    Leer enBlanco
+	
+    // Calcular la nota final
+    nota <- (correctas * 5) + (incorrectas * (-1)) + (enBlanco * 0)
+	
+    // Mostrar el resultado
+    Escribir "La nota final del estudiante es: ", nota
+FinAlgoritmo
